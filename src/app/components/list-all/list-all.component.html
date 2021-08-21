@@ -1,0 +1,14 @@
+<table class="table table-hover half-width">
+  <thead>
+    <tr>
+      <th scope="col" *ngFor="let titulo of TITULOS">{{titulo.label}}</th>
+    </tr>
+  </thead>
+  <tbody *ngFor="let data of DATA">
+    <tr>
+      <td *ngFor="let titulo of TITULOS">
+        <app-celda [conceptoRenglon]= "data" [infoCelda] = "data[titulo.prop]" [tituloColumna]= "titulo"></app-celda>
+      </td>           
+    </tr>
+  </tbody>
+</table>

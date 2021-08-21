@@ -1,0 +1,39 @@
+<div class="container">
+    <ul>
+        <li><a (click)="activo='Paises'">Paises</a></li>
+        <li><a class="estados" (click)="activo='Estados'">Estados</a></li>
+        <li><a class="Municipios" (click)="activo='Municipios'">Municipios</a></li>
+
+    </ul>
+
+<div class="ex1">
+    <table class="lista">
+
+        <div class="d-none" [ngClass]="{'d-block':activo==='Paises'}">
+            <tr *ngFor="let country of countries_">
+                <td (click)="seleccion(country)">{{country.country_name}}</td>
+            </tr>
+        </div>
+
+        <div class="d-none" [ngClass]="{'d-block':activo==='Estados'}">
+            <tr *ngFor="let state of states">
+                <td (click)="seleccionCity(state)">{{state.state_name}}</td>
+            </tr>
+        </div>
+
+        <div class="d-none" [ngClass]="{'d-block':activo==='Municipios'}">
+            <tr *ngFor="let city of cities">
+                <td >{{city.city_name}}</td>
+            </tr>
+        </div>
+
+
+
+
+    </table>
+</div>
+
+
+   
+
+</div>

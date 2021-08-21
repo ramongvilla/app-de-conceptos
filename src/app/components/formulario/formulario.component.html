@@ -1,0 +1,102 @@
+<div class="modal fade" id="modal3">
+    <div Class="modal-dialog">
+        <!--aqui comienza wl contenido-->
+        <div class="modal-content">
+            <!--header de la ventana-->
+            <div class="modal-header">
+                <h4 class="modal-title">Agregar Concepto</h4>
+                <button tyle="button" class="close" data-dismiss="modal3" aria-hidden="true">
+                    &times;
+                </button>
+
+            </div>
+
+
+
+
+            <!--contenido de la ventana <app-task (enviar)="recibirMensaje($event)"></app-task> -->
+            <div class="card-body">
+
+                <form>
+
+
+                    <label for="floatingInputGrid">Etiqueta</label>
+
+                    <input type="text" class="form-control" id="etiqueta" name="etiqueta"
+                        [(ngModel)]="conceptoService.mensaje.etiqueta" placeholder="Etiqueta" #new_etiqueta>
+
+                    <div class="alert-danger">
+                        <!--<div class="container_error-message">El campo Etiqueta es requerido</div> -->
+
+                    </div>
+
+
+
+
+
+
+
+
+
+                    <label for="floatingInputGrid">Descripción</label>
+
+                    <textarea cols="3" type="text" class="form-control" id="descripcion" name="descripcion"
+                        [(ngModel)]="conceptoService.mensaje.descripcion" placeholder="Descripción" #new_descripcion>
+
+                        </textarea>
+
+                    <div class="alert-danger">
+                        <!-- <div class="container_error-message">El campo Descripcion debe contener máximo 25 caracteres</div> -->
+
+                    </div>
+
+                    <label for="floatingInputGrid">Tipo</label>
+
+                    <select id="tipo" name="tipo" [(ngModel)]="conceptoService.mensaje.type" #new_tipo class="form-control"
+                        aria-label=".form-select-lg example">
+                        <option value="HTML">HTMl</option>
+                        <option value="CSS">CSS</option>
+                        <option value="TYPESCRIPT">TYPESCRIPT</option>
+                    </select>
+
+
+                    <div id="mar">
+
+                        <div></div>
+                        <button *ngIf="taskService.accion === 'Guardar'; else update" id="hola" class="btn btn-primary"
+                            (click)="addConcepto(new_etiqueta, new_descripcion,new_tipo)">
+                            {{conceptoService.accion}}
+                        </button>
+
+                        <ng-template #update>
+
+                            <button id="hola" class="btn btn-primary"
+                                (click)="updateConcepto(new_etiqueta, new_descripcion,new_tipo)">
+                                {{conceptoService.accion}}
+                            </button>
+
+                        </ng-template>
+
+
+
+
+
+                        <!-- <button id="hola" class="btn btn-primary"
+                            (click)="uptadaTask(new_etiqueta, new_descripcion,new_tipo)">
+                            {{taskService.accion}}
+                        </button>
+                          -->
+                        <button id="hola" type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                    </div>
+
+
+
+
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>

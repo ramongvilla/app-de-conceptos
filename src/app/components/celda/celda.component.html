@@ -1,0 +1,12 @@
+<ng-template #texto>
+    {{infoCelda}}
+</ng-template>
+<div *ngIf="tituloColumna.prop =='acciones'; else texto">
+    <a href="#modal3" class="btn btn-success" data-toggle="modal" (click)="editar(conceptoRenglon)">
+        Editar{{infoCelda}}
+    </a>
+    <app-formulario> </app-formulario>
+    <button class="btn btn-danger" (click)="eliminar(conceptoRenglon)">
+        Eliminar
+    </button>
+</div>

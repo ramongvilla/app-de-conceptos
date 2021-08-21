@@ -1,0 +1,107 @@
+.bonito{
+    background: #fff;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+
+#nombre{
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+#nombre1{
+    margin-top: 10px;
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+.text-muted{
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container{
+  background-color: #13345356;;
+  min-width: 450px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  
+ 
+	
+
+}
+
+#lista {
+    display:inline;
+
+}
+.green {
+    color: green;
+ 
+}
+
+.edi{
+	text-align: right;
+    padding-top: 10px;
+    font-size: 40px;
+    
+    
+}
+#hola{
+	
+
+	
+
+	border-radius: 50%;
+	
+	transition: all 0.1s ease-in-out;
+	font-size: 25px;
+  
+
+	color: white;
+	text-align: center;
+	line-height: 40px;
+   
+	
+
+
+	
+}
+
+
+.boton{
+    width:20px;
+    height:20px;
+    background-color:#03800b;
+    margin: 5px;
+    padding:10px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    font-size:20px;
+    line-height:32px;
+    text-transform: uppercase;
+    float:left;
+  }
+  .boton:hover{
+    background-color: #2c2fa5; /* Color de fondo al pasar el cursor */
+	box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
+	transform: translateY(-7px);
+  }
+  .boton a{
+    color:#fff;
+    text-decoration:none;
+    font-size: 40px;
+    padding:5px 5px 5px 0;
+  }
+
+
+  .redondo{
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #344232d5;
+  }

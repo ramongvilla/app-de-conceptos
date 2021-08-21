@@ -1,0 +1,20 @@
+<div class="container">
+    <h4>pasando componente</h4>
+    <ng-container [ngTemplateOutlet]="componentTemplate"></ng-container>
+</div>
+<ng-template #componentTemplate>
+    <app-list-all [data]="DATA"></app-list-all>
+
+</ng-template>
+<!--<ul>
+    <h1>{{dato_c.titulo}}</h1>
+    <h1>{{dato_c.css_[0].concepto}}</h1>
+
+x
+    
+  
+</ul>
+<hr>
+
+<ng-container [ngTemplateOutlet]="countries"></ng-container>
+-->

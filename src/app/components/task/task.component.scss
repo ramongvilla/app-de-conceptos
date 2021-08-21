@@ -1,0 +1,45 @@
+#content::after {
+    
+    display:block;
+    content:"";
+    clear:both;
+  }
+#hola{
+    border-radius: 15px;
+    width: 100px;
+    margin-left: 10px;
+    text-align: center;
+
+}
+li{
+    list-style-type: none;
+}
+
+ul.navega li {
+    display: inline;
+    padding-right: 0.5em;
+  }
+
+
+ 
+
+  #margen_but{
+    text-align: center;
+
+  }
+
+  #cabezera{
+    
+  
+    text-align: center;
+  }
+  #acciones{
+    text-align: center;
+  }
+
+
+  .colorEditado {
+    color: white;
+    background-color: rgba(143, 54, 143, 0.986);
+}
+

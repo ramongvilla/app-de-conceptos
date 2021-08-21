@@ -1,0 +1,58 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+    aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" href="#">Ejemplo</a>
+
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+        <button *ngFor="let values of valores" id='{{values.color}}' class="btn"
+          (click)="aver(values.titulo)">
+          {{values.titulo}}
+        </button>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input id="buscar" class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+    </form>
+  </div>
+</nav>
+
+
+<div id="hola" class="card">
+
+  <ul class="card-body">
+    <h3 class="card-title">{{tab_concepto.titulo}}</h3>
+    <a href="#modal3" class="btn btn-primary" data-toggle="modal" (click)="detalle()">
+      Agregar Concepto
+    </a>
+    <app-formulario> </app-formulario> 
+   
+  </ul>
+</div>
+
+<app-task-form></app-task-form>
+<app-task-list></app-task-list>
+
+<app-vista></app-vista>
+
+<!-- aqui va el alert
+
+    <div class="row">
+        <div class="col-8"></div>
+        <div class="col-4">
+            <div id ="mensaje">
+                <div  class="col-sm-">
+                    <div class="alert alert-info">
+                       
+                        Se agrego el concepto list-style-type en la lista CSS
+                    </div>
+                  </div>
+                </div>
+            
+        </div>
+      </div>
+-->
